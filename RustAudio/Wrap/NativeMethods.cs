@@ -16,6 +16,8 @@ namespace RustAudio
     {
         #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN || PLATFORM_STANDALONE_WIN
         private const string EXTENSION = ".dll";
+        #elif UNITY_EDITOR_LINUX || UNITY_STANDALONE_LINUX || PLATFORM_STANDALONE_LINUX
+        private const string EXTENSION = ".so";
         #else
         private const string EXTENSION = ".dylib";
         #endif
